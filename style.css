@@ -1,0 +1,1381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body,
+html {
+    background-color: red;
+    color: #fff;
+    height: 100vh;
+}
+/* .hero+:hover{
+    background: rgb(0, 0, 0);
+} */
+/* .hero {
+    background-color: rgb(0, 0, 0);
+} */
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: rgb(0, 0, 0);
+    z-index: 0;
+}
+
+.nav-ul {
+    line-height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+   padding: 0px;
+   z-index: 4;
+
+}
+
+/* .hero >nav:hover {
+    background: red;
+}
+ */
+
+.nav-li {
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 10;
+}
+
+.nav-a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 10;
+}
+
+.hero>:hover {
+    background-color: rgb(0, 0, 0);
+}
+.hero~:hover{
+    background:red;
+}
+.nav-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-p-a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    z-index: 6;
+}
+
+/* nav work */
+
+.container {
+    width: 100%;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-gap: 10px;
+    padding: 0px;
+    z-index: 0;
+    background-color: black;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(51, 176.81px);
+}
+.container > div{
+    z-index: 4;
+}
+
+
+/* .container>div:hover::after{
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+} */
+.pick {
+    max-width: 100%;
+}
+
+.pick1 {
+    grid-area: 1/1/4/4;
+    color: white;
+}
+
+.pick1-p {
+    grid-area: 1/1/span 3/ span 3;
+    background: url("./images/_grid_3x3_aliciakeys_deutsche_japaner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+/* .pick1-p:hover {
+    background: black;
+} */
+
+.pick1-p:hover::after {
+    content: "Alicia Keys Branding Packaging";
+    position: relative;
+    left: 100px;
+    top: 50px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+   /* transition: all 0s 0.5ms linear; */
+    /* display: block; */
+}
+
+.pick2-p {
+    grid-area: 1/4/span 2/ span 2;
+    background: url("images/rocnation.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick2-p:hover::after {
+    content: "Rocnation Branding Typography";
+    position: relative;
+    left: 100px;
+    top: 50px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick3-p {
+    grid-area: 1/6/span 2/ span 2;
+    background: url("images/cap.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick3-p:hover::after {
+    content: "My Inner Health Club Branding";
+    position: relative;
+    left: 10px;
+    top: 50px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick4-p {
+    grid-area: 4/1/span 2/2;
+    background: url('images/font.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick4-p:hover::after {
+    content: "Friends of Truths Branding,Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick5-p {
+    grid-area: 4/2/6/4;
+    background: url('images/shree.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick5-p:hover::after {
+    content: "Schreiberei Munchi Branding";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick6-p {
+    grid-area: 3/4/5/5;
+    background: url('images/yelloww.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick6-p:hover::after {
+    content: "Mighty Oaks Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick7-p {
+    grid-area: 3/5/5/7;
+    background: url('images/pink.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick7-p:hover::after {
+    content: "Loops Branding Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick8-p {
+    grid-area: 6/1/8/3;
+    background: url('images/tq.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick8-p:hover::after {
+    content: "Brothers Branding";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+/* .pick9-p {
+    grid-area: 6/3/8/4;
+    background: url('images/black.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick9-p:hover{
+    background: black;
+}
+.pick9-p:hover::after{
+    content: "Gallery New York Branding,Editorial, Digital";
+} */
+
+.pick10-p {
+    grid-area: 6/3/8/4;
+    background: url('images/black.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick10-p:hover::after {
+    content: "Gallery New York Branding,Editorial, Digital";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick11-p {
+    grid-area: 5/4/8/8;
+    background: url('images/graybox.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick11-p:hover::after {
+    content: "Givenchy Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick12-p {
+    grid-area: 8/1/10/2;
+    background: url('images/girl.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick12-p:hover::after {
+    content: "Mogli Branding Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Helvetica, sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick13-p {
+    grid-area: 8/2/10/4;
+    background: url('images/jug.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick13-p:hover::after {
+    content: "Tyndra Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick14-p {
+    grid-area: 8/4/10/5;
+    background: url('images/boy.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick14-p:hover::after {
+    content: "Saltwater Branding";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick15-p {
+    grid-area: 8/5/10/7;
+    background: url('images/pour.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick15-p:hover::after {
+    content: "Vice Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick16-p {
+    grid-area: 10/1/span 3/span 3;
+    background: url('images/white.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick16-p:hover::after {
+    content: "Nike Swooch Style Branding";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick17-p {
+    grid-area: 10/4/12/6;
+    background: url('images/tohru.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick17-p:hover::after {
+    content: "Tohru Branding";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick18-p {
+    grid-area: 10/6/12/7;
+    background: url('images/X.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick18-p:hover::after {
+    content: "Christina Aguilera Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick19-p {
+    grid-area: 13/1/15/3;
+    background: url('images/Font1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick19-p:hover::after {
+    content: "RSVP Mono Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick20-p {
+    grid-area: 13/3/15/4;
+    background: url('images/rgb.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick20-p:hover::after {
+    content: "Syllable Branding Digital";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick21-p {
+    grid-area: 12/4/15/7;
+    background: url('images/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick21-p:hover::after {
+    content: "Solomun Branding Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick22-p {
+    grid-area: 15/1/17/2;
+    background: url('images/collection.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick22-p:hover::after {
+    content: "Giahi Branding Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick23-p {
+    grid-area: 15/2/span 2/span 2;
+    background: url('images/blueblack.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick23-p:hover::after {
+    content: "Depicting Recent Memories Book Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick24-p {
+    grid-area: 15/4/span 2/span 1;
+    background: url('images/neck.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick24-p:hover::after {
+    content: "Bodyleaks Branding Editorial, Digital";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick25-p {
+    grid-area: 15/5/span 2/span 2;
+    background: url('images/pink1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick25-p:hover::after {
+    content: "InBloom Branding Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick26-p {
+    grid-area: 17/1/span 3/span 3;
+    background: url('images/face.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick26-p:hover::after {
+    content: "Women by Nike Branding, Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick27-p {
+    grid-area: 17/4/span 2/span 2;
+    background: url('images/paper.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick27-p:hover::after {
+    content: "Bibi van der Velden Branding, Typography, Digital";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick28-p {
+    grid-area: 17/6/span 2/7;
+    background: url('images/stack.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick28-p:hover::after {
+    content: "Chairman by Thomas Schnur Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick29-p {
+    grid-area: 20/1/span 2/span 2;
+    background: url('images/nant.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick29-p:hover::after {
+    content: "Ignnat Branding, Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick30-p {
+    grid-area: 20/3/span 2/span 1;
+    background: url('images/content.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick30-p:hover::after {
+    content: "Fatuk Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick31-p {
+    grid-area: 19/4/span 2/span 1;
+    background: url('images/yeah.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick31-p:hover::after {
+    content: "It's for us Branding, Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick32-p {
+    grid-area: 19/5/span 2/span 2;
+    background: url('images/set.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick32-p:hover::after {
+    content: "Sennheiser Sydney Branding";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick33-p {
+    grid-area: 22/1/span 2/span 1;
+    background: url('images/girl1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick33-p:hover::after {
+    content: "Nova Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick34-p {
+    grid-area: 22/2/span 2/span 2;
+    background: url('images/R.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick34-p:hover::after {
+    content: "Interpersonal Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick35-p {
+    grid-area: 21/4/span 3/span 3;
+    background: url('images/shirt.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick35-p:hover::after {
+    content: "Armedangels Branding Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick36-p {
+    grid-area: 24/1/span 3/span 3;
+    background: url('images/ike.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick36-p:hover::after {
+    content: "Nike Unlaced Branding Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick37-p {
+    grid-area: 24/4/span 4/span 2;
+    background: url('images/chill.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick37-p:hover::after {
+    content: "Haiyti Montenegro Zero packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick38-p {
+    grid-area: 24/6/span 2/span 1;
+    background: url('images/moon.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick38-p:hover::after {
+    content: "K.H. Wurtz Lift of Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+
+.pick39-p {
+    grid-area: 27/1/span 2/span 1;
+    background: url('images/ghost.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick39-p:hover::after {
+    content: "Ark Poncho Object";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick40-p {
+    grid-area: 27/2/span 2/span 2;
+    background: url('images/redwhite.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick40-p:hover::after {
+    content: "Schick toikka Merged Contours Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick41-p {
+    grid-area: 26/6/span 2/span 1;
+    background: url('images/blackbox.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick41-p:hover::after {
+    content: "Arose byTastsas x Deutsche & Japaner Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick42-p {
+    grid-area: 27/2/span 2/span 2;
+    background: url('images/redwhite.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.pick42-p:hover::after {
+    content: "Schike Toikka Merged Contours Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick43-p {
+    grid-area: 29/1/span 2/span 2;
+    background: url('images/table.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pick43-p:hover::after {
+    content: "Platforms Thomas Schnur Collaboration";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick44-p {
+    grid-area: 29/3/span 2/span 1;
+    background: url('images/lips.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick44-p:hover::after {
+    content: "Aesoap by Jonas Lindstroem Asthetics Habitat Photography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick45-p {
+    grid-area: 28/4/span 3/span 3;
+    background: url('images/whitebox.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick45-p:hover::after {
+    content: "Nimu Roma Branding Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick46-p {
+    grid-area: 31/1/span 3/span 3;
+    background: url('images/rs.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick46-p:hover::after {
+    content: "Resident Serif Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick47-p {
+    grid-area: 31/4/span 4/span 2;
+    background: url('images/p.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick47-p:hover::after {
+    content: "Bruno Mars Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick48-p {
+    grid-area: 31/6/span 2/span 1;
+    background: url('images/girlly.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick48-p:hover::after {
+    content: "Eliff Doppeleben Branding";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+.pick49-p {
+    grid-area: 34/1/span 2/span 1;
+    background: url('images/circle.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick49-p:hover::after {
+    content: "sennheiser HE1 Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+.pick50-p {
+    grid-area: 34/2/span 2/span 2;
+    background: url('images/grayboy.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick50-p:hover::after {
+    content: "Sayf Mirka laura Severa Collaboration";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick51-p {
+    grid-area: 33/6/span 2/span 1;
+    background: url('images/blackbook.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick51-p:hover::after {
+    content: "Depot Basel Branding Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+.pick52-p {
+    grid-area: 36/1/span 2/span 2;
+    background: url('images/tool.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick52-p:hover::after {
+    content: "Thomas Schnur Funktionsraum Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick53-p {
+    grid-area: 36/3/span 2/span 1;
+    background: url('images/bot.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick53-p:hover::after {
+    content: "Lovemelosangeles by Matthias Weingeartner Aesthetics Habitat Photorgraphy";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+.pick54-p {
+    grid-area: 35/4/span 3/span 3;
+    background: url('images/bluebox.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick54-p:hover::after {
+    content: "Notebook || Object Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick55-p {
+    grid-area: 38/1/span 3/span 3;
+    background: url('images/scarf.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick55-p:hover::after {
+    content: "Repetition Series SUla Collaboration";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick56-p {
+    grid-area: 38/4/span 4/span 2;
+    background: url('images/dress.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick56-p:hover::after {
+    content: "Opack Branding";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick57-p {
+    grid-area: 38/6/span 2/span 1;
+    background: url('images/grid.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick57-p:hover::after {
+    content: "Uncover Branding, Typography, Digital";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick58-p {
+    grid-area: 41/1/span 2/span 1;
+    background: url('images/horse.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick58-p:hover::after {
+    content: "Shutterstock Object";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick59-p {
+    grid-area: 41/2/span 2/span 2;
+    background: url('images/dress1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick59-p:hover::after {
+    content: "U A D J Ucon Acrobatics Collaboration";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick60-p {
+    grid-area: 40/6/span 2/span 1;
+    background: url('images/paint.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick60-p:hover::after {
+    content: "Giro Object";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick61-p {
+    grid-area: 43/1/span 2/span 2;
+    background: url('images/no.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick61-p:hover::after {
+    content: "Bonechina Bar Branding, Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick62-p {
+    grid-area: 43/3/span 2/span 1;
+    background: url('images/sd.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick62-p:hover::after {
+    content: "Saint Laurent by Uwe Jens Bermitinger Aesthetics Habitat Photography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick63-p {
+    grid-area: 42/4/span 3/span 3;
+    background: url('images/backcap.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}.pick63-p:hover::after {
+    content: "Jay-Z MCWT Object";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick64-p {
+    grid-area: 45/1/span 3/span 3;
+    background: url('images/booook.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick64-p:hover::after {
+    content: "Absolute New York Horst Hamman Editorial";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick65-p {
+    grid-area: 45/4/span 4/span 2;
+    background: url('images/white shirt.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick65-p:hover::after {
+    content: "Dorothee Schumacher Branding, Typography, Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick66-p {
+    grid-area: 45/6/span 2/span 1;
+    background: url('images/car.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick66-p:hover::after {
+    content: "BMW by Amos Fricke Asthetics Habitat Photograpgy";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+.pick67-p {
+    grid-area: 48/1/span 2/span 2;
+    background: url('images/wlt.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick67-p:hover::after {
+    content: "Opus V Restaurent Branding, Typography, Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick68-p {
+    grid-area: 48/3/span 2/span 1;
+    background: url('images/sst.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick68-p:hover::after {
+    content: "Christian Haas by Mirka Laura Severa Aesthetics Habitat Photography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick69-p {
+    grid-area: 47/6/span 2/span 1;
+    background: url('images/cuts.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick69-p:hover::after {
+    content: "Fabian Romer Kalenderblatter Packaging";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick70-p {
+    grid-area: 50/1/span 2/span 1;
+    background: url('images/folder.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick70-p:hover::after {
+    content: "Specher7 Hotel Branding Digital";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+.pick71-p {
+    grid-area: 50/2/span 2/span 2;
+    background: url('images/rtco.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick71-p:hover::after {
+    content: "R.T.CO UV series Photography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.pick72-p {
+    grid-area: 49/4/span 3/span 3;
+    background: url('images/rockstar.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pick72-p:hover::after {
+    content: "Jay Z- Live in Brooklyn Typography";
+    position: relative;
+    left: 25px;
+    top: 50px;
+    font-family:  Arial,sans-serif;
+    font-size: 20px;
+    transition: background 10s 0s;
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 48px 48px 38px 48px;
+    flex-direction: row;
+
+}
+
+.footer ul {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.footer a {
+    text-decoration: none;
+
+}
+.footer a:hover{
+   text-decoration: underline;
+   text-underline-offset: 10px;
+    
+}
+.redbox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+}
+nav:hover + .redbox{
+    background-color: red;
+    z-index:4;
+}
